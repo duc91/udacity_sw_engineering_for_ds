@@ -82,6 +82,69 @@ erDiagram
 ```
 ## Setup
 
-pip install -r requirements.txt
+### Create and activate a virtual environment
 
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### Install project dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Install the Python package
+
+```bash
 pip install -e ./python-package
+```
+
+## Running Tests
+
+Run the project tests:
+
+```bash
+python -m pytest tests/test_employee_events.py -v
+```
+
+## Building the Python Package
+
+Create the source distribution archive:
+
+```bash
+cd python-package
+python -m build --sdist
+```
+
+The package archive will be created in:
+
+```text
+python-package/dist/
+```
+
+## Running the Dashboard
+
+Start the dashboard application:
+
+```bash
+python report/dashboard.py
+```
+
+The dashboard is available at:
+
+```text
+http://localhost:5001
+```
+
+## Project Features
+
+- Python package for querying employee and team data
+- SQLite database integration
+- Object-oriented design using inheritance and mixins
+- Interactive dashboard built with FastHTML
+- Employee and team performance visualizations
+- Recruitment risk prediction using a machine learning model
+- Automated testing with pytest
+- GitHub Actions for testing and linting
