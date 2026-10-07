@@ -138,13 +138,3 @@ The dashboard is available at:
 http://localhost:5001
 ```
 
-## Project Features
-
-- Python package for querying employee and team data
-- SQLite database integration
-- Object-oriented design using inheritance and mixins
-- Interactive dashboard built with FastHTML
-- Employee and team performance visualizations
-- Recruitment risk prediction using a machine learning model
-- Automated testing with pytest
-- GitHub Actions for testing and linting
